@@ -1,0 +1,23 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/drawable-v24/btn_background_border.xml" value="0.1" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/drawable-v24/btn_color.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/drawable-v24/btn_unsel_color.xml" value="0.1" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/drawable-v24/undo.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/drawable/addimage.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/layout/eraser_width_alert.xml" value="0.1" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/menu/menu_item.xml" value="0.33" />
+        <entry key="..\:/Users/ajaya/AndroidStudioProjects/shapes/app/src/main/res/menu/menu_items.xml" value="0.34427083333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

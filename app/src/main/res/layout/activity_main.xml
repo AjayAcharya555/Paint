@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.Paint.PaintView
+        android:id="@+id/paint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.example.Paint.PaintView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/pen"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/pen"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/eraser"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/eraser"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/pen" />
+
+                    <ImageView
+                        android:id="@+id/color_pick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:clickable="true"
+                        android:src="@drawable/colorpick"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/eraser" />
+
+                    <ImageView
+                        android:id="@+id/undo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/undo"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/color_pick" />
+
+                    <ImageView
+                        android:id="@+id/line"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/line"
+                        android:clickable="true"
+                        android:background="@drawable/btn_background_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/undo" />
+
+                    <ImageView
+                        android:id="@+id/circle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/cirlce"
+                        android:clickable="true"
+                        android:background="@drawable/btn_background_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/line" />
+
+                    <ImageView
+                        android:id="@+id/square"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/square"
+                        android:clickable="true"
+                        android:background="@drawable/btn_background_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/circle" />
+
+                    <ImageView
+                        android:id="@+id/pick_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/addimage"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/square" />
+
+                    <ImageView
+                        android:id="@+id/color_fill"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/fill_color"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/image" />
+
+                    <ImageView
+                        android:id="@+id/clear_canvas"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="12dp"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/clear"
+                       />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/box_btn"
+                        android:layout_width="30dp"
+                        android:clickable="true"
+                      android:layout_margin="12dp"
+                        android:enabled="true"
+                        android:background="@drawable/btn_background_border"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
